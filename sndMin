@@ -1,0 +1,11 @@
+function secondMinimum(values) {
+	var min = values[0];
+	var sndMin = values[0];
+
+	for (value of values){
+	    if(value < min) {
+	      sndMin = min;
+	      min = value;
+	}
+	}
+	return sndMin;     }
